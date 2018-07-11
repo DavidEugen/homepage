@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.text-main-header {
+  color: #EE4B28 !important;
+}
+
+.btn-mr-05rem{
+	margin: 0.5rem;
+}
+
+.down_app {
+	width: 12rem;
+    margin: 0.2rem;
+}

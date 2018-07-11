@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.FaqMapper">
+
+<!-- <resultMap type="faqVo" id="resultFaqVo">
+        <result property="sheetCode" column="sheetCode"   />
+        <result property="dataCode"  column="dataCode"  />
+        <result property="enQ"  column="enQ"  />
+        <result property="enA"  column="enA"  />
+        <result property="krQ"  column="krQ"  />
+        <result property="krA"  column="krA"  />
+        <result property="question"  column="question"  />
+        <result property="answer"  column="answer"  />
+</resultMap> -->
+
+<select id="selectFaqCode" parameterType="faqCodeVo" resultType="faqCodeVo">
+	SELECT
+		langCode
+		,	sheetCode
+		,	sheetName	
+	FROM
+		tb_faq_code
+	WHERE
+		langCode = #{langCode}	
+		AND
+		sheetCode = #{sheetCode}
+</select>
+
+<select id="selectFaqCodeList" parameterType="String" resultType="faqCodeVo">
+	SELECT
+		langCode
+		,	sheetCode
+		,	sheetName	
+	FROM
+		tb_faq_code
+	WHERE
+		langCode = #{value}	
+</select>
+
+<select id="selectFaqList" parameterType="faqCodeVo" resultType="faqVo">
+	SELECT
+		sheetCode
+		,	dataCode
+		,	enQ
+		,	enA
+		,	krQ
+		,	krA
+		<if test="langCode.equals('en')">
+		,	enQ question
+		,	enA answer
+		</if>
+		<if test="langCode.equals('kr')">
+		,	krQ question
+		,	krA answer
+		</if>
+	FROM
+		tb_faq
+	WHERE
+		sheetCode = #{sheetCode}
+	ORDER BY
+		dataCode
+</select>
+
+
+
+<insert id="faqInsert" parameterType="faqVo">
+	INSERT INTO tb_faq (
+		sheetCode
+		,	dataCode
+		,	krQ
+		,	krA
+		,	enQ
+		,	enA
+	)
+	VALUES(
+		#{sheetCode}
+		,	#{dataCode}
+		,	#{krQ}
+		,	#{krA}
+		,	#{enQ}
+		,	#{enA}
+	
+	)
+</insert>
+	
+
+
+</mapper>
