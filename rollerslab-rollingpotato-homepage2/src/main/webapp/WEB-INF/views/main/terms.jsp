@@ -1,30 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>RollingPotato</title>
-	<!-- favicon -->
-	<!-- link rel="shortcut icon" href="images/icons/favicon.ico" -->
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Code+Pro:300,400,600,700" rel="stylesheet">
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="/resources/vendor/bootstrap/css/bootstrap.min.css">
-	<!-- custom main stylesheet -->
-	<link rel="stylesheet" href="/resources/css/creative.css">
+	<!-- 공통 메타 정보 -->
+	<jsp:include page="/WEB-INF/views/include/common_meta.jsp" flush="false"/>
+	<!-- 공통 CSS -->
+	<jsp:include page="/WEB-INF/views/include/common_css.jsp" flush="false"/>
+
+	<title>Terms - RollingPotato</title>
 </head>
 <body>
-
+	<!-- Home Title -->
+	<jsp:include page="/WEB-INF/views/include/home_title.jsp" flush="false"/>
+	
+	<!-- 본문 -->
 	<section id="terms" class="section">
 		<div class="container">
 			<div class="row">
 				<div class="about__text col-xs-12 col-md-12">
-          <a href="/main.do#contact" rel="nofollow" class="text__button">Go to homepage</a>
 					<h2 class="text__header">Terms and Conditions</h2>
 					<p class="text__par">
-            1. Objective of Standard Terms and Conditions<br>The objective of the Standard Terms and Conditions is to determine the provisions for the MARCOnPOLO (“MARCOnPOLO” or the “Company”) and Users’ rights, duties, and responsibilities in using the website provided by the Company (the “Service”). The Standard Terms and Conditions shall apply mutatis mutandis to electronic transactions using cable/wireless PC internet, smartphone (i-Phone and android phones, etc.) applications and mobile web, etc. unless contrary to their intrinsic characteristics.<br><!--[if !supportEmptyParas]-->
+            	1. Objective of Standard Terms and Conditions<br>The objective of the Standard Terms and Conditions is to determine the provisions for the MARCOnPOLO (“MARCOnPOLO” or the “Company”) and Users’ rights, duties, and responsibilities in using the website provided by the Company (the “Service”). The Standard Terms and Conditions shall apply mutatis mutandis to electronic transactions using cable/wireless PC internet, smartphone (i-Phone and android phones, etc.) applications and mobile web, etc. unless contrary to their intrinsic characteristics.<br><!--[if !supportEmptyParas]-->
 <!--[endif]--><br><!--[if !supportEmptyParas]-->
 <!--[endif]--><br>2. Definition<br>① “Company” refers to MARCOnPOLO. It can also refer to a virtual workplace such as website, smartphone application, and mobile web, etc. established for the purpose of providing PlayPlanet’s goods or services to its Users<br>② “User” refers to Members and non-Members that access the Company and receive the Service provided by the Company pursuant to the Standard Terms and Conditions.<br>③ “Member” refers to any person who accesses the Company's "Service" and enters into a contract with the Company in accordance with the starndard Terms and Conditions and uses the Services provided by the Company.<br>④ “Account” refers to the email address provided by the Member and authorized by the Company or the account that is registered with another designated by the Company for the identification of members and use of the Service.<br>⑤ "Password" refers to the combination of English letters and numbers registered by the member himself / herself for the purpose of identifying the identity of the member and protecting the interests and confidentiality of the member.<br>⑥ “MARCO” refers to any Member who has access to the Company’s Service and is able to use the trip registered by POLO.<br>⑦ “POLO” refers to a member who registers a trip with the Company and provides guidance and experience to MARCO who purchased the relevant trip.<br>⑧ “Travel” refers to a conduct of POLO providing guidance and experience to MARCO in a region visited by MARCO.<br>⑨ “Post” refers to individual content such as travel, text, tags, links, photos, videos and various files registered on “MARCOnPOLO” when Member uses our service.<br><!--[if !supportEmptyParas]-->
 <!--[endif]--><br><!--[if !supportEmptyParas]-->
@@ -59,17 +56,15 @@
 <!--[endif]--><br>17. Limitation of Liability<br>① The "Company" is exempted from all liabilities and responsibilities in relation to the provision of Service if it is unable to provide the "Service" due to natural disasters or other equivalent force majeure.<br>② The "Company" is exempted from all liabilities and responsibilities for damages caused by unavoidable reasons such as maintenance, replacement, periodic inspection and construction of service facilities.<br>③ The "Company" is exempted from all liabilities and responsibilities for any loss is incurred due to the suspension of telecommunication service or failure to provide the telecommunication service in an ordinary manner by the relevant key telecommunications business operator<br>④ The Company shall not be liable for any disruption in the use of the Service due to the cause of the Member.<br>⑤ The "Company" shall not be liable for damages caused by user's computer error, or for any damage caused by user's insufficient personal information and e-mail address.<br>⑥ The "Company" shall not be held liable for the contents of the information, data, facts, credibility, accuracy, etc. posted by "member" in relation to the "service".<br>⑦ "Company" shall not be liable for any loss or loss of revenue that you expect to receive from the Service.<br>⑧ The Company shall not be liable or responsible for the User’s loss incurred due to materials received during the use of Service. Furthermore, the Company shall not be liable or responsible to compensate any mental or psychological damages of the User suffered due to the other User during the use of Service.<br>⑨ The "Company" shall be exempted from liability if it makes transactions through "Service" between "Members" or between "Members" and third parties.<br>⑩ The Company does not have any duty to intervene in any disputes occurred between the Users and between the User and third parties in relation to the Service, and the Company shall not be liable or responsible for any related or resulting losses.<br>⑪ The Company shall not be liable or responsible for any losses related to the use of Service that the Company provides to the User for free.<br>⑫ The “Member” is legally responsible for the mail or message content sent by "Member".<br><!--[if !supportEmptyParas]-->
 <!--[endif]--><br><!--[if !supportEmptyParas]-->
 <!--[endif]--><br>18. Governing Law and Jurisdiction<br>① Any lawsuit filed between "Company" and "Member" shall be governed by the laws of the Republic of Korea.<br>② In case of a dispute arising between "Company" and "Member", the court that has jurisdiction over the headquarters of the "Company" shall be the court of competent jurisdiction.
-          </p>
-          <a href="/main.do#contact" rel="nofollow" class="text__button">Go to homepage</a>
+					</p>
+					<a href="/main.do#contact" rel="nofollow" class="text__button">Go to homepage</a>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<!-- jQuery -->
-	<script src="/resources/js/libs/jquery.min.js"></script>
-	<!-- smooth scroll -->
-	<script src="/resources/js/libs/jquery.smooth-scroll.min.js"></script>
+	
+	<!-- 공통 js -->
+	<jsp:include page="/WEB-INF/views/include/common_js.jsp" flush="false"/>
 
 </body>
 </html>

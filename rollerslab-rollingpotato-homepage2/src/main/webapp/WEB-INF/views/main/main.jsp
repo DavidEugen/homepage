@@ -1,54 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-<!-- 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content=""> -->
+<head>
+	<!-- 공통 메타 정보 -->
+	<jsp:include page="/WEB-INF/views/include/common_meta.jsp" flush="false"/>
+    <!-- 공통 CSS -->
+	<jsp:include page="/WEB-INF/views/include/common_css.jsp" flush="false"/>
 
-    <title>RollingPotato</title>
+	<title>Home - RollingPotato</title>
+</head>
 
-    <%-- <!-- Bootstrap core CSS -->
-    <link href="${pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="${pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='${pageContext.request.contextPath}/resources/css/font/family_open_sans.css' rel='stylesheet' type='text/css'>
-    <link href='${pageContext.request.contextPath}/resources/css/font/family_merriweather.css' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="${pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="${pageContext.request.contextPath}/resources/css/creative.css" rel="stylesheet">
-    
-    <!-- User style -->
-    <link href="${pageContext.request.contextPath}/resources/css/main.css" rel="stylesheet"> --%>
-    
-    <jsp:include page="/WEB-INF/views/include/header_meta.jsp" flush="true"/>
-	<jsp:include page="/WEB-INF/views/include/header_css.jsp" flush="true"/>
-  </head>
-
-  <body id="page-top">
-
+<body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        	<img src="${pageContext.request.contextPath}/resources/images/logo_Ro.png" width="40" height="30"/> 
-        	RollingPotato
-        </a>
+        <!-- Home Title -->
+		<jsp:include page="/WEB-INF/views/include/home_title.jsp" flush="false"/>
+        
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#traveler">Traveler</a>
@@ -57,7 +33,7 @@
               <a class="nav-link js-scroll-trigger" href="#localer">Local</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+              <a class="nav-link js-scroll-trigger" href="faq/en/home.do">FaQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -66,7 +42,8 @@
         </div>
       </div>
     </nav>
-
+	
+	<!-- Header - Main -->
     <header class="masthead text-center text-main-header d-flex">
       <div class="container my-auto">
         <div class="row">
@@ -84,8 +61,20 @@
         </div>
       </div>
     </header>
+	
+	<!-- Download -->
+	<section class="bg-dark text-white" id="download">
+      <div class="container text-center">
+        <h2 class="mb-4">Wanna try?<br>Please download our mobile app!</h2>
+        <hr class="light my-4">
+        <br>
+        <a href="https://itunes.apple.com/us/app/marconpolo-travel-with-locals/id1257129331?ls=1&mt=8" rel="nofollow" ><img class="down_app" src="${pageContext.request.contextPath}/resources/images/common/en_apple_down.png" alt=""></a>
+		<a href="https://play.google.com/store/apps/details?id=com.marconpolo&rel=4705734693521575350" rel="nofollow" ><img class="down_app" src="${pageContext.request.contextPath}/resources/images/common/en_google_down.png" alt=""></a>
+      </div>
+    </section>
 
-	<section id="services">
+	<!-- Service -->
+	<!-- <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -126,35 +115,38 @@
           </div>
         </div>
       </div>
-    </section>
-	
-    <section class="bg-primary" id="traveler">
+    </section> -->
+		
+	<!-- Traveler -->
+    <section class="" id="traveler">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Are you traveling?</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">Find your Local Potato! <br>The local potato will guide you the place and make your trip special.</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#download">Get Started!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="" id="localer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Are you a local?</h2>
-            <hr class="my-4">
-            <p class="text-muted mb-4">Go on a staycation with travelers! Travel your own city with a whole new view and make new friends  from all over the world.</p>
+            <h2 class="section-heading">Are you traveling?</h2>
+            <hr class=" my-4">
+            <p class="text-muted mb-4">Find your Local Potato! <br>The local potato will guide you the place and make your trip special.</p>
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#download">Get Started!</a>
           </div>
         </div>
       </div>
     </section>
+    
+    <!-- Local -->
+    <section class="bg-primary" id="localer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Are you a local?</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Go on a staycation with travelers! Travel your own city with a whole new view and make new friends  from all over the world.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#download">Get Started!</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!--    <section class="p-0" id="instagram">
+	<!-- instaFeed -->
+	<!--    <section class="p-0" id="instagram">
       <div class="container-fluid p-0">
         <div id="instafeed" class="row no-gutters popup-gallery">
           
@@ -178,86 +170,63 @@
         </div>
       </div>
     </section>-->
-    
-    
-    
 
-    <section class="bg-dark text-white" id="download">
-      <div class="container text-center">
-        <h2 class="mb-4">Wanna try?<br>Please download our mobile app!</h2>
-        <a href="https://itunes.apple.com/us/app/marconpolo-travel-with-locals/id1257129331?ls=1&mt=8" rel="nofollow" ><img class="down_app" src="/resources/images/common/en_apple_down.png" alt=""></a>
-		<a href="https://play.google.com/store/apps/details?id=com.marconpolo&rel=4705734693521575350" rel="nofollow" ><img class="down_app" src="/resources/images/common/en_google_down.png" alt=""></a>
-        <!-- <a class="btn btn-light btn-xl sr-button text__button" href="https://itunes.apple.com/us/app/marconpolo-travel-with-locals/id1257129331?ls=1&mt=8" rel="nofollow" >Download on the App Store.</a>
-		<a class="btn btn-light btn-xl sr-button text__button btn-mr-05rem" href="https://play.google.com/store/apps/details?id=com.marconpolo&rel=4705734693521575350" rel="nofollow" >Get it on Google Play.</a> -->
-      </div>
-    </section>
-
-    <section id="contact">
+	<!-- contact -->
+    <section id="contact" >
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Let's Get In Touch!!</h2>
             <hr class="my-4">
-            <p class="mb-5 copyright">
-            	
-           	</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 ml-auto text-center">
+          <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
             <p>+82 2-6403-2850</p>
           </div>
-          <div class="col-lg-3 mr-auto text-center">
+          <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
               <a href="mailto:info@rollerslab.com?Subject=Hello%20again" target="_top">info@rollerslab.com</a>
             </p>
           </div>
-          <div class="col-lg-3 mr-auto text-center">
+          <%-- <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-university fa-3x mb-3 sr-contact"></i>
             <p>
 	          <a href="${pageContext.request.contextPath}/policy.do">Privacy Policy</a>
             </p>
           </div>
-          <div class="col-lg-3 mr-auto text-center">
+          <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-list-ol fa-3x mb-3 sr-contact"></i>
 			<p>
 			  <a href="${pageContext.request.contextPath}/terms.do">Terms and Conditions</a>
 			</p>
-          </div>
+          </div> --%>
         </div>
       </div>
     </section>
-    <footer>
-    	<div class="mr-auto text-center">
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-footer-sz">
+    	<div class="mr-auto ">
           	<p>
-          	상호명: 롤러즈랩(주) | 대표: 윤세은 | 개인정보책임자: 윤세은   
-				<br> 사업자등록번호:894-88-00984  |  통신판매업신고번호: 제2018-서울마포-0791호 |<a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2018313020130200791&pageUnit=10&searchCnd=wrkr_no&searchKrwd=8948800984&pageIndex=1" target="_new"> 사업자정보확인 </a>
-            	<br> 서울시 마포구 마포대로38 908호(도화동, 일신빌딩) |
+          			  상호명: 롤러즈랩(주) | 대표: 윤세은 | 개인정보책임자: 윤세은 |   
+            		  서울시 마포구 마포대로38 908호(도화동, 일신빌딩) |
+					  사업자등록번호:894-88-00984  | 통신판매업신고번호: 제2018-서울마포-0791호 |
+					 <a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2018313020130200791&pageUnit=10&searchCnd=wrkr_no&searchKrwd=8948800984&pageIndex=1" target="_new"> 사업자정보확인 </a> | 
+					 <a href="${pageContext.request.contextPath}/policy.do">Privacy Policy</a> | 
+					 <a href="${pageContext.request.contextPath}/terms.do">Terms and Conditions</a>
             	<br> 자사는 서울특별시관광협회 공제영업보증보험에 가입이 되어 있습니다.
-				<br> 롤러즈랩(주)는 통신판매중개자이며 통신판매의 당사자가 아닙니다.<Br> 따라서 롤러즈랩(주)는 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.<br>
-          	© 2018 RollersLAB Inc
+				<br> 롤러즈랩(주)는 통신판매중개자이며 통신판매의 당사자가 아닙니다.
+				<Br> 따라서 롤러즈랩(주)는 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.<br>
+          	<div style="text-align : center"><span>Copyright © 2018 RollersLAB Inc</span></div>
           	</p>
           </div>
-    
     </footer>
-
-
-   <%--  <!-- Bootstrap core JavaScript -->
-    <script src="${pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="${pageContext.request.contextPath}/resources/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="${pageContext.request.contextPath}/resources/js/creative.min.js"></script> --%>
-	<jsp:include page="/WEB-INF/views/include/header_js.jsp" flush="true"/>
-	<%-- <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/instafeed.min.js"></script> 
-	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/insta.js"></script> --%>
+	
+	<!-- 공통 js -->
+	<jsp:include page="/WEB-INF/views/include/common_js.jsp" flush="false"/>
   </body>
 
 </html>

@@ -3,28 +3,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>RollingPotato</title>
-	<!-- favicon -->
-	<!-- link rel="shortcut icon" href="images/icons/favicon.ico" -->
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Code+Pro:300,400,600,700" rel="stylesheet">
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="/resources/vendor/bootstrap/css/bootstrap.min.css">
-	<!-- custom main stylesheet -->
-	<link rel="stylesheet" href="/resources/css/creative.css">
+	<!-- 공통 메타 정보 -->
+	<jsp:include page="/WEB-INF/views/include/common_meta.jsp" flush="false"/>
+	<!-- 공통 CSS -->
+	<jsp:include page="/WEB-INF/views/include/common_css.jsp" flush="false"/>
+
+	<title>Policy - RollingPotato</title>
 </head>
 <body>
-
+	<!-- Home Title -->
+	<jsp:include page="/WEB-INF/views/include/home_title.jsp" flush="false"/>
+	
+	<!-- 본문 -->
 	<section id="terms" class="section">
 		<div class="container">
 			<div class="row">
 				<div class="about__text col-xs-12 col-md-12">
-          <a href="/main.do#contact" rel="nofollow" class="text__button">Go to homepage</a>
 					<h2 class="text__header">Privacy Policy</h2>
 					<p class="text__par">
-            1. Purposes of Collection and Use of Personal Information<br>① Purposes of collection and use of personal information<br>MARCOnPOLO (the “Company”) uses the collected personal information for the following purposes.<br>1) Member management: identity check as a part of member management and use of Service, verification of individual identity, prevention of unauthorized use by unruly members and their disqualification, prevention of use, confirmation of intent to subscribe, verification of age, verification of consent by legal attorney-in-fact in case of collection of personal information of child under age 14, record-keeping for dispute resolution, complaint handling, and delivery of notices, etc.<br>2) Polo identification ： Polo phone number verification, personal identification, prevention of intermediary services or use of service for poor or improper guides.<br>3) Others: establishment of clear communication channels including verification of one’s opinion, introduction of new service / product or event, and usage for various marketing activities against members.<br><!--[if !supportEmptyParas]-->
+            		1. Purposes of Collection and Use of Personal Information<br>① Purposes of collection and use of personal information<br>MARCOnPOLO (the “Company”) uses the collected personal information for the following purposes.<br>1) Member management: identity check as a part of member management and use of Service, verification of individual identity, prevention of unauthorized use by unruly members and their disqualification, prevention of use, confirmation of intent to subscribe, verification of age, verification of consent by legal attorney-in-fact in case of collection of personal information of child under age 14, record-keeping for dispute resolution, complaint handling, and delivery of notices, etc.<br>2) Polo identification ： Polo phone number verification, personal identification, prevention of intermediary services or use of service for poor or improper guides.<br>3) Others: establishment of clear communication channels including verification of one’s opinion, introduction of new service / product or event, and usage for various marketing activities against members.<br><!--[if !supportEmptyParas]-->
 <!--[endif]--><br><!--[if !supportEmptyParas]-->
 <!--[endif]--><br>② Personal information items for collection<br>The minimum personal information items that we collect for the purpose of providing services and the purposes are as follows. The company collects information entered by the customer himself / herself when registering as a customer, and information that can be automatically generated in the process of using the web and the app such as log, cookie, device information, etc. by storing on the Server.<br>1) Member recognition purpose : Essential items (email address, password, name and birth year and date) and Selective items (residing region, speakable language, and Facebook account)<br>2) Polo registration purpose : Mobile phone number<br>3) Others: Log record, service usage record, Cookie, IP address, usage suspension record, and usage termination record<br><!--[if !supportEmptyParas]-->
 <!--[endif]--><br><!--[if !supportEmptyParas]-->
@@ -65,17 +62,15 @@
 <!--[endif]--><br><!--[if !supportEmptyParas]-->
 <!--[endif]--><br>9. Amendment to the Personal Information Protection Policy<br>① The Company’s Personal Information Protection Policy may be amended pursuant to the amendments to Korean law and the Company’s internal policies.<br><!--[if !supportEmptyParas]-->
 <!--[endif]--><br>② Where the Company amends the Personal Information Protection Policy, the Company will announce the details of amendment on the opening page of the Company’s website from 7 days prior to the date of implementation of amendment to the date immediately preceding the date of implementation.
-          </p>
-          <a href="/main.do#contact" rel="nofollow" class="text__button">Go to homepage</a>
+					</p>
+					<a href="/main.do#contact" rel="nofollow" class="text__button">Go to homepage</a>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<!-- jQuery -->
-	<script src="/resources/js/libs/jquery.min.js"></script>
-	<!-- smooth scroll -->
-	<script src="/resources/js/libs/jquery.smooth-scroll.min.js"></script>
+	
+	<!-- 공통 js -->
+	<jsp:include page="/WEB-INF/views/include/common_js.jsp" flush="false"/>
 
 </body>
 </html>

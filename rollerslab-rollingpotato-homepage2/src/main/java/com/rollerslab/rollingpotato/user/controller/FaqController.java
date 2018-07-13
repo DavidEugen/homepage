@@ -25,6 +25,7 @@ public class FaqController {
 	public ModelAndView faqHome(@PathVariable("lang") String lang, @ModelAttribute("cmd") FaqCode cmd) {
 		ModelAndView mav = new ModelAndView();
 		
+		//Faq 대 항목 리스트
 		List<FaqCode> faqTitleList = service.getFaqCodeList(lang);
 		
 		mav.addObject("cmd", cmd);
@@ -46,11 +47,16 @@ public class FaqController {
 		
 		faqCode = service.getFaqCodeById(faqCode);
 		
+		//Faq 세부 항목 리스트
 		List<Faq> faqList = service.getFaqList(faqCode);
+		
+		//Faq 대 항목 리스트
+		List<FaqCode> faqTitleList = service.getFaqCodeList(lang);
 		
 		mav.addObject("cmd",cmd);
 		mav.addObject("faqCode",faqCode);
 		mav.addObject("faqList",faqList);
+		mav.addObject("faqTitleList", faqTitleList);
 		
 		mav.setViewName("faq/sub_page");
 

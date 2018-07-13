@@ -3,32 +3,12 @@
     
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
     <title>RollingPotato</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="${pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="${pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="${pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="${pageContext.request.contextPath}/resources/css/creative.css" rel="stylesheet">
     
-    <!-- User style -->
-    <link href="${pageContext.request.contextPath}/resources/css/main.css" rel="stylesheet">
+    <jsp:include page="/WEB-INF/views/include/header_meta.jsp" flush="true"/>
+	<jsp:include page="/WEB-INF/views/include/header_css.jsp" flush="true"/>
   </head>
 
   <body id="page-top">
@@ -37,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        	<img src="${pageContext.request.contextPath}/resources/images/logo_Ro.png" width="40" height="30"/> 
+        	<img src="${pageContext.request.contextPath}/resources/images/logo_Ro.png" width="30" height="30"/> 
         	RollingPotato
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,13 +26,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#traveler">Traveler</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#localer">Local</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#instagram">Instagram</a>
+              <a class="nav-link js-scroll-trigger" href="faq/en/home.do">FaQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -61,6 +44,11 @@
         </div>
       </div>
     </nav>
+
+	<%-- <div class="downlaod_navi">
+	  <a href="https://itunes.apple.com/us/app/marconpolo-travel-with-locals/id1257129331?ls=1&mt=8" rel="nofollow" ><img src="${pageContext.request.contextPath}/resources/images/common/small-icon-apple.png" alt=""></a>
+	  <a href="https://play.google.com/store/apps/details?id=com.marconpolo&rel=4705734693521575350" rel="nofollow" ><img src="${pageContext.request.contextPath}/resources/images/common/small-icon-google.png" alt=""></a>
+	</div> --%>
 
     <header class="masthead text-center text-main-header d-flex">
       <div class="container my-auto">
@@ -80,7 +68,21 @@
       </div>
     </header>
 
-	<section id="services">
+	<section class="bg-dark text-white" id="download">
+      <div class="container text-center">
+        <h2 class="mb-4">Wanna try?<br>Please download our mobile app!</h2>
+        <hr class="light my-4">
+        <br>
+        <a href="https://itunes.apple.com/us/app/marconpolo-travel-with-locals/id1257129331?ls=1&mt=8" rel="nofollow" ><img class="down_app" src="${pageContext.request.contextPath}/resources/images/common/en_apple_down.png" alt=""></a>
+		<a href="https://play.google.com/store/apps/details?id=com.marconpolo&rel=4705734693521575350" rel="nofollow" ><img class="down_app" src="${pageContext.request.contextPath}/resources/images/common/en_google_down.png" alt=""></a>
+      
+        <!-- <a class="btn btn-light btn-xl sr-button text__button" href="https://itunes.apple.com/us/app/marconpolo-travel-with-locals/id1257129331?ls=1&mt=8" rel="nofollow" >Download on the App Store.</a>
+		<a class="btn btn-light btn-xl sr-button text__button btn-mr-05rem" href="https://play.google.com/store/apps/details?id=com.marconpolo&rel=4705734693521575350" rel="nofollow" >Get it on Google Play.</a> -->
+      </div>
+    </section>
+
+
+	<!-- <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -121,39 +123,39 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 	
-    <section class="bg-primary" id="traveler">
+    <section class="" id="traveler">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Are you traveling?</h2>
-            <hr class="my-4">
-            <p class="text-faded mb-4">Find your Local Potato! <br>The local potato will guide you the place and make your trip special.</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#download">Get Started!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="" id="localer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Are you a local?</h2>
-            <hr class="light my-4">
-            <p class="text-muted mb-4">Go on a staycation with travelers! Travel your own city with a whole new view and make new friends  from all over the world.</p>
+            <h2 class="section-heading">Are you traveling?</h2>
+            <hr class=" my-4">
+            <p class="text-muted mb-4">Find your Local Potato! <br>The local potato will guide you the place and make your trip special.</p>
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#download">Get Started!</a>
           </div>
         </div>
       </div>
     </section>
+    
+    <section class="bg-primary" id="localer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Are you a local?</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Go on a staycation with travelers! Travel your own city with a whole new view and make new friends  from all over the world.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#download">Get Started!</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section class="p-0" id="instagram">
+  <!--    <section class="p-0" id="instagram">
       <div class="container-fluid p-0">
         <div id="instafeed" class="row no-gutters popup-gallery">
           
-          <!-- <div class="col-lg-4 col-sm-6">
+         <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="/resources/images/portfolio/fullsize/1.jpg">
               <img class="img-fluid" src="/resources/images/portfolio/thumbnails/1.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -168,205 +170,67 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="/resources/images/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="/resources/images/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="/resources/images/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="/resources/images/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="/resources/images/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="/resources/images/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="/resources/images/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="/resources/images/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="/resources/images/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="/resources/images/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div> -->
+          
           
         </div>
       </div>
-    </section>
-    
-    
-    
+    </section>-->
 
-    <section class="bg-dark text-white" id="download">
-      <div class="container text-center">
-        <h2 class="mb-4">Wanna try?<br>Please download our mobile app!</h2>
-        <a class="btn btn-light btn-xl sr-button text__button" href="https://itunes.apple.com/us/app/marconpolo-travel-with-locals/id1257129331?ls=1&mt=8" rel="nofollow" >Download on the App Store.</a>
-		<a class="btn btn-light btn-xl sr-button text__button btn-mr-05rem" href="https://play.google.com/store/apps/details?id=com.marconpolo&rel=4705734693521575350" rel="nofollow" >Get it on Google Play.</a>
-      </div>
-    </section>
-
-    <section id="contact">
+    <section id="contact" >
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Let's Get In Touch!!</h2>
             <hr class="my-4">
-            <p class="mb-5 copyright">
-            	
-           	</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 ml-auto text-center">
+          <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
             <p>+82 2-6403-2850</p>
           </div>
-          <div class="col-lg-3 mr-auto text-center">
+          <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
               <a href="mailto:info@rollerslab.com?Subject=Hello%20again" target="_top">info@rollerslab.com</a>
             </p>
           </div>
-          <div class="col-lg-3 mr-auto text-center">
+          <%-- <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-university fa-3x mb-3 sr-contact"></i>
             <p>
 	          <a href="${pageContext.request.contextPath}/policy.do">Privacy Policy</a>
             </p>
           </div>
-          <div class="col-lg-3 mr-auto text-center">
+          <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-list-ol fa-3x mb-3 sr-contact"></i>
 			<p>
 			  <a href="${pageContext.request.contextPath}/terms.do">Terms and Conditions</a>
 			</p>
-          </div>
+          </div> --%>
         </div>
       </div>
     </section>
-    <footer>
-    	<div class="mr-auto text-center">
+    <footer class="bg-dark text-white text-footer-sz">
+    	<div class="mr-auto ">
           	<p>
-          	상호명: 롤러즈랩(주) | 대표: 윤세은 | 개인정보책임자: 윤세은   
-				<br> 사업자등록번호:894-88-00984  |  통신판매업신고번호: 제2018-서울마포-0791호 |<a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2018313020130200791&pageUnit=10&searchCnd=wrkr_no&searchKrwd=8948800984&pageIndex=1" target="_new"> 사업자정보확인 </a>
-            	<br> 서울시 마포구 마포대로38 908호(도화동, 일신빌딩) |
+          			  상호명: 롤러즈랩(주) | 대표: 윤세은 | 개인정보책임자: 윤세은 |   
+            		  서울시 마포구 마포대로38 908호(도화동, 일신빌딩) |
+					  사업자등록번호:894-88-00984  | 통신판매업신고번호: 제2018-서울마포-0791호 |
+					 <a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2018313020130200791&pageUnit=10&searchCnd=wrkr_no&searchKrwd=8948800984&pageIndex=1" target="_new"> 사업자정보확인 </a> | 
+					 <a href="${pageContext.request.contextPath}/policy.do">Privacy Policy</a> | 
+					 <a href="${pageContext.request.contextPath}/terms.do">Terms and Conditions</a>
             	<br> 자사는 서울특별시관광협회 공제영업보증보험에 가입이 되어 있습니다.
-				<br> 롤러즈랩(주)는 통신판매중개자이며 통신판매의 당사자가 아닙니다.<Br> 따라서 롤러즈랩(주)는 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.<br>
-          	© 2018 RollersLAB Inc
+				<br> 롤러즈랩(주)는 통신판매중개자이며 통신판매의 당사자가 아닙니다.
+				<Br> 따라서 롤러즈랩(주)는 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.<br>
+          	<div style="text-align : center"><span>Copyright © 2018 RollersLAB Inc</span></div>
           	</p>
           </div>
     
     </footer>
 
-	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/instafeed.min.js"></script>
-    <script>
-    var templetStr = 	'<div class="col-lg-3 col-sm-6">'
-    				+	' <a class="portfolio-box" href="{{link}}">'
-    				+	'  <img class="img-fluid" src="{{image}}" alt="">'
-    				+	'  <div class="portfolio-box-caption">'
-    				+	'   <div class="portfolio-box-caption-content">'
-    				+	'    <div class="project-category text-faded">'
-    				+	'      <i class="fa fa-comment-o mb-3 "></i> {{comments}} '
-    				+	'      <i class="fa fa-heart mb-3 "></i> {{likes}}'
-    				+	'    </div>'
-    				+	'   </div>'
-    				+	'  </div>'
-    				+	' </a>'
-    				+	'</div>';
-    				
-    //var loadButton = document.getElementById('load-more');
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: '6311422525',
-        sortBy: "most-recent",
-        resolution: 'standard_resolution', // thumbnail, low_resolution, standard_resolution
-        limit: 12,
-        template: templetStr, 
-        // {{link}} : 게시물 링크, {{image}} : 사진 url, {{caption}} : 게시물 텍스트, {{comments}} : 코멘트, {{likes}}, 라이크 개수
-        accessToken: '6311422525.32ddd26.4593415606284c698acfd6c6ad3e007e' ,
-        after: function() {
-        	// disable button if no more results to load
-            /* if (!this.hasNext()) {
-              loadButton.setAttribute('disabled', 'disabled');
-            } */
-        }
-        /* , filter: function(image) {
-            return image.tags.indexOf('TAG_NAME') >= 0;
-        } */
-    });
-    
- 	// bind the load more button
-    /* loadButton.addEventListener('click', function() {
-    	userFeed.next();
-    }); */
-    
-    userFeed.run();
-    </script>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="${pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="${pageContext.request.contextPath}/resources/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="${pageContext.request.contextPath}/resources/js/creative.min.js"></script>
-
+	<jsp:include page="/WEB-INF/views/include/header_js.jsp" flush="true"/>
+	<%-- <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/instafeed.min.js"></script> 
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/insta.js"></script> --%>
   </body>
 
 </html>

@@ -4,6 +4,10 @@
 <!-- <link href="/resources/libs/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet">
 <link href="/resources/libs/jquery-ui-1.12.1/jquery-ui.structure.min.css" rel="stylesheet">
 <link href="/resources/libs/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet"> -->
+<!-- basic CSS -->
+<link href="${pageContext.request.contextPath}/resources/libs/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/libs/jquery-ui-1.12.1/jquery-ui.structure.min.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/libs/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet"> 
 
 <!-- Bootstrap core CSS -->
 <link href="${pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

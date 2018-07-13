@@ -3,36 +3,49 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- 공통 메타 정보 -->
+	<jsp:include page="/WEB-INF/views/include/common_meta.jsp" flush="false"/>
+	<!-- 공통 CSS -->
+	<jsp:include page="/WEB-INF/views/include/common_css.jsp" flush="false"/>
 
-<jsp:include page="/WEB-INF/views/include/header_meta.jsp" flush="true"/>
-<jsp:include page="/WEB-INF/views/include/header_css.jsp" flush="true"/>
-
-<title>FaQ</title>
-
+	<title>Terms - RollingPotato</title>
+	
+	<style>
+	section{
+		padding: 1rem 0;
+	}
+	</style>
 </head>
-<body>
+<body id="page-top">
 
 	<form:form name="form" id="form" commandName="cmd" action="" method="post">
 	</form:form>
-
+	
+	<!-- Home Title -->
+	<jsp:include page="/WEB-INF/views/include/home_title.jsp" flush="false"/>
+	
+	<!-- 본문 영역 -->
 	<section>
-		<h1><c:out value="Faq Home"/></h1>
-		<div>
-			<ul>
+		<div class="container">
+			<h3 class="mb-4"><c:out value="Frequently Asked Questions"/></h3>
+			<ul class="list-group">
 				<c:forEach items="${faqTitleList}" var="list">
-					<li><a href="javascript:goFaq('${list.langCode}','${list.sheetCode}')">${list.sheetName}</a></li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						<a href="javascript:goFaq('${list.langCode}','${list.sheetCode}')">${list.sheetName}</a>
+					</li>
 				</c:forEach>
 			</ul>
 		</div>
 	</section>
 	
-	<jsp:include page="/WEB-INF/views/include/header_js.jsp" flush="true"/>
-
-	<script src="/resources/js/views/faq/home.js"></script>
+	<!-- 공통 js -->
+	<jsp:include page="/WEB-INF/views/include/common_js.jsp" flush="false"/>
+	
+	<!-- Faq_Home js -->
+	<script src="${pageContext.request.contextPath}/resources/js/views/faq/home.js"></script>
 	
 </body>
 </html>
