@@ -1,0 +1,119 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-marconpolo {
+	padding: 20px 0px;
+	background-color: #ffffff;
+}
+
+.footer-marconpolo .text {
+	font-family: 'Droid Serif', 'Nanum Gothic';
+	color: #454545;
+	font-size: 11px;
+	letter-spacing: 0.1em;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.text-box {
+	clear: both;
+	display: block;
+	padding-top: 20px;
+
+}
+
+.desc {
+    font-family: 'Raleway','Nanum Gothic';
+    font-size: 13px;
+    color: #868788;
+    letter-spacing: .025em;
+    line-height: 1.8;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+h6.up {
+    font-family: 'Raleway','Nanum Gothic';
+    font-size: 13px;
+    color: #3a3a3a;
+    letter-spacing: .2em;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.image-wrap {
+    display: block;
+    margin: 0 auto;
+    float: none;
+   	max-width: 100%;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.image-wrap img, img {
+    margin: 0 auto;
+}
+
+.element, .element * {
+    word-wrap: break-word;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.item {
+	padding-top: 24px;
+}
+
+.navbar-header {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#tpl-logo-text {
+    font-family: 'Lato','Nanum Gothic';
+    font-size: 22px;
+    color: #000;
+    font-weight: 300;
+    letter-spacing: .3em;
+    word-wrap: break-word;
+    display: inline-table;
+    vertical-align: middle;
+}
+
+#tpl-title {
+   font-family: 'Lato','Nanum Gothic';
+   font-size: 14px;
+   color: #000;
+   font-weight: 100;
+   letter-spacing: .3em;
+   word-wrap: break-word;
+   display: inline-table;
+   vertical-align: middle;
+}

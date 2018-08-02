@@ -3,6 +3,8 @@ package com.rollerslab.rollingpotato.util;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -29,16 +31,19 @@ public class ExcelExtractor {
 		Map<String,String> sheetCodeMap = new HashMap<String,String>();
     	List<Faq> faqList = new ArrayList<Faq>();
 
+    	//현재 경로 생성
+    	String fullPath = getCurrentPath();
+    	
     	//경로 확인
-		File rootPath = new File(File.separator);
-		File currentPath = new File("D:\\Git\\RollersLab\\rollerslab-rollingpotato-homepage");
+		//File rootPath = new File(File.separator);
+		File currentPath =  new File(fullPath);
 		
 		try {
 			//경로 확인
-			System.out.println("rootPath : " + rootPath.getCanonicalPath());
-			System.out.println("rootPath : " + currentPath.getCanonicalPath());
+			//System.out.println("rootPath : " + rootPath.getCanonicalPath());
+			//System.out.println("current : " + currentPath.getCanonicalPath());
 			
-			File excelFile = new File(currentPath.getCanonicalPath() + File.separator + targertFileName);
+			File excelFile = new File(currentPath.getCanonicalPath() + File.separator +"resources"+ File.separator + targertFileName);
 			
 			//Data 담을 Map 생성
 			Map<String, List<Faq>> faqMap = new HashMap<String, List<Faq>>();
@@ -146,5 +151,21 @@ public class ExcelExtractor {
 		
 		return faqList;
 		
+	}
+
+	private static String getCurrentPath() {
+		String path = ExcelExtractor.class.getClassLoader().getResource("").getPath();
+		//System.out.println("init Path  : " + path);
+    	String fullPath = null;
+		try {
+			fullPath = URLDecoder.decode(path, "UTF-8");
+		} catch (UnsupportedEncodingException e1) {
+			e1.printStackTrace();
+		}
+    	String pathArr[] = fullPath.split("/WEB-INF/classes/");
+    	//System.out.println(fullPath);
+    	//System.out.println(pathArr[0]);
+    	fullPath = pathArr[0];
+		return fullPath;
 	}
 }

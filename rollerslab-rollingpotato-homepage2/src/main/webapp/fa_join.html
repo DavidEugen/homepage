@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> faceboook_redirect </title>
+<script>
+var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+
+if (varUA.match('android') != null) {
+location.href="https://play.google.com/store/apps/details?id=com.marconpolo&rel=4705734693521575350";
+} else if (varUA.indexOf("iphone")>-1||varUA.indexOf("ipad")>-1||varUA.indexOf("ipod")>-1) {
+location.href="https://itunes.apple.com/us/app/marconpolo-travel-with-locals/id1257129331?ls=1&mt=8";
+} else {
+location.href="https://www.rollingpotato.com";
+}
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+

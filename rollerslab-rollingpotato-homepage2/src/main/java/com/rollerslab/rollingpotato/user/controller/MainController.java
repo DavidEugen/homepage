@@ -40,4 +40,16 @@ public class MainController {
 		mav.setViewName("main/terms");
 		return mav;
 	}
+	@RequestMapping(value="purchaseTerms.do")
+	public ModelAndView purchaseTerms() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("main/purchaseTerms");
+		return mav;
+	}
+	@RequestMapping(value="guideTerms.do")
+	public ModelAndView infoTerms() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("main/guideTerms");
+		return mav;
+	}
 }

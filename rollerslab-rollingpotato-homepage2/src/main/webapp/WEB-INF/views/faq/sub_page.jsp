@@ -34,9 +34,11 @@
 
 	<form:form name="form" id="form" commandName="cmd" action="" method="post">
 	</form:form>
-	
-	<!-- Home Title -->
-	<jsp:include page="/WEB-INF/views/include/home_title.jsp" flush="false"/>
+		
+	<div class="faq_title">
+		<!-- Home Title -->
+		<jsp:include page="/WEB-INF/views/include/home_title.jsp" flush="false"/>
+	</div>
 	
 	<!-- 본문 영역 -->
 	<section>
@@ -65,7 +67,10 @@
 	
 	<script>
 	$(document).ready(function(){
-		$( "#accordion" ).accordion();
+		/* $( "#accordion" ).accordion(); */
+		$( "#accordion" ).accordion({
+			heightStyle: "content"	//adjust height for contents
+		});
 	});
 	</script>
 	
