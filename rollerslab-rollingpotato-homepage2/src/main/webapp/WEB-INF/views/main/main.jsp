@@ -3,6 +3,15 @@
 <!DOCTYPE html>
 <html lang="kr">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123325231-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	
+		gtag('config', 'UA-123325231-1');
+	</script>
 	
 	<meta name="title" 				content="Rolling Potato - 여행, 일상이 되다" />
 	<meta name="keywords" 			content="여행정보 및 투어, 여행 팁, 여행 가이드, 현지같은 여행, 현지 매칭, 색다른 여행, 맞춤 여행, 외국인 친구 매칭, 카우치 포테이토" />
@@ -23,6 +32,7 @@
 </head>
 
 <body id="page-top">
+	<!-- 네비게이션 메뉴 -->
     <jsp:include page="/WEB-INF/views/include/home_navi.jsp" flush="false"/>
 	
 	<!-- Header - Main -->
@@ -138,6 +148,8 @@
 	
 	<!-- 공통 js -->
 	<jsp:include page="/WEB-INF/views/include/common_js.jsp" flush="false"/>
+	<!-- Custom scripts for this template -->
+	<script src="${pageContext.request.contextPath}/resources/js/creative.js"></script> 
   </body>
 
 </html>

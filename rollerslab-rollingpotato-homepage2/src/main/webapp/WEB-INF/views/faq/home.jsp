@@ -49,7 +49,6 @@
 	
 	<!-- 공통 js -->
 	<jsp:include page="/WEB-INF/views/include/common_js.jsp" flush="false"/>
-	
 	<!-- Faq_Home js -->
 	<script src="${pageContext.request.contextPath}/resources/js/views/faq/home.js"></script>
 	

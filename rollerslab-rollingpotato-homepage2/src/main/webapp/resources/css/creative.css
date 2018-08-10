@@ -50,7 +50,7 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-section {
+section:not(#terms) {
   /* padding: 12rem 0; */
   
   -webkit-height: -webkit-calc(100vh - 58px); /* google, safari */

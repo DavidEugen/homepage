@@ -14,5 +14,5 @@
 <script src="${pageContext.request.contextPath}/resources/js/libs/jquery.smooth-scroll.min.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="${pageContext.request.contextPath}/resources/js/creative.js"></script> 
+<%-- <script src="${pageContext.request.contextPath}/resources/js/creative.js"></script>  --%><!-- 네비 안쓰는 메뉴에서 충돌 -->
  
