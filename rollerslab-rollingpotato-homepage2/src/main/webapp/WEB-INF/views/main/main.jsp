@@ -13,14 +13,14 @@
 		gtag('config', 'UA-123325231-1');
 	</script>
 	
-	<meta name="title" 				content="Rolling Potato - 여행, 일상이 되다" />
+	<meta name="title" 				content="여행, 일상이 되다 - 롤링포테이토" />
 	<meta name="keywords" 			content="여행정보 및 투어, 여행 팁, 여행 가이드, 현지같은 여행, 현지 매칭, 색다른 여행, 맞춤 여행, 외국인 친구 매칭, 카우치 포테이토" />
-	<meta name="description" 		content="여행지를 현지처럼, 현지를 여행지처럼 만들어보세요! Rolling Potato에서 현지 친구는 물론, 전문 가이드까지 찾을 수 있어요." />
+	<meta name="description" 		content="여행지를 현지처럼, 현지를 여행지처럼 만들어보세요! 롤링포테이토에서 현지 친구는 물론, 전문 가이드까지 찾을 수 있어요." />
 	<meta name="author" 			content="RollersLab">
 	<meta property="fb:app_id" 		content="282020548951045">	
 	<meta property="og:site_name" 	content="Rolling Potato">
-	<meta property="og:title" 		content="Rolling Potato - 여행, 일상이 되다">	
-	<meta property="og:description" content="여행지를 현지처럼, 현지를 여행지처럼 만들어보세요! Rolling Potato에서 현지 친구는 물론, 전문 가이드까지 찾을 수 있어요.">
+	<meta property="og:title" 		content="여행, 일상이 되다 - 롤링포테이토">	
+	<meta property="og:description" content="여행지를 현지처럼, 현지를 여행지처럼 만들어보세요! 롤링포테이토에서 현지 친구는 물론, 전문 가이드까지 찾을 수 있어요.">
 	<meta property="og:url" 		content="https://www.rollingpotato.com/">	
 		
 	<!-- 공통 메타 정보 -->
@@ -28,7 +28,7 @@
     <!-- 공통 CSS -->
 	<jsp:include page="/WEB-INF/views/include/common_css.jsp" flush="false"/>
 	
-	<title>Rolling Potato - 여행, 일상이 되다</title>
+	<title>여행, 일상이 되다 - 롤링포테이토</title>
 </head>
 
 <body id="page-top">

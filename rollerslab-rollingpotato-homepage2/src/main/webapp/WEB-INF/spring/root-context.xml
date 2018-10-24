@@ -9,7 +9,7 @@
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/rollerslab?serverTimezone=UTC&amp;useSSL=false"/>
         <property name="username" value="rollerslab"/>
-        <property name="password" value="mapoMAPO1!"/>
+        <property name="password" value="dbpass"/>
     </bean>
     
     <bean id="dataSource" class="net.sf.log4jdbc.Log4jdbcProxyDataSource">
